@@ -71,7 +71,7 @@ INCLUDE options/network.makejail
 
 SYSRC "darkhttpd_flags=--uid darkhttpd --gid darkhttpd --log /var/log/darkhttpd.log"
 
-INCLUDE darkhttpd/Makejail
+INCLUDE gh+AppJail-makejails/darkhttpd
 
 OPTION expose=80
 
