@@ -1,0 +1,8 @@
+tags: latest
+latest.arch: amd64
+latest.name: "darkhttpd"
+latest.timestamp.amd64: 1688387920
+latest.sum.amd64: 6d5f2521b362734be346d833b75fd49d58e53bb15d0f70caf13982816773a9b5
+latest.size.amd64: 470472
+latest.source.amd64: https://dtxdf.duckdns.org/90L4Y9z3z2/darkhttpd_latest_amd64_image_appjail
+latest.source.amd64+: https://anonget.onrender.com/90L4Y9z3z2/darkhttpd_latest_amd64_image_appjail

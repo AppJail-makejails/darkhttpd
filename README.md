@@ -84,3 +84,42 @@ MOUNT "${wwwdir}" /usr/local/www/darkhttpd
 Darkhttpd does not have a configuration file like other web servers, it simply uses command-line options, so we can pass options through `darkhttpd_flags`. Note that `darkhttpd_flags` is enclosed in quotes as `sysrc(8)` will complain about the hyphens.
 
 The port (external and internal) `80` is used as you can see, but use any port you want.
+
+### Arguments
+
+* `darkhttpd_tag` (default: `latest`): see [#tags](#tags).
+
+## How to build the Image
+
+Make any changes you want to your image.
+
+```
+INCLUDE options/network.makejail
+INCLUDE gh+AppJail-makejails/darkhttpd --file build.makejail
+
+SYSRC darkhttpd_enable=YES
+SERVICE darkhttpd start
+```
+
+Build the jail:
+
+```sh
+appjail makejail -j darkhttpd
+```
+
+Remove unportable or unnecessary files and directories and export the jail:
+
+```sh
+appjail stop darkhttpd
+appjail cmd local darkhttpd sh -c "rm -f var/log/*"
+appjail cmd local darkhttpd sh -c "rm -f var/db/pkg/*"
+appjail cmd local darkhttpd sh -c "rm -f var/cache/pkg/*"
+appjail cmd local darkhttpd vi etc/rc.conf
+appjail image export darkhttpd
+```
+
+## Tags
+
+| Tag | Arch | Version |
+| --- | --- | --- |
+| `latest` | `amd64` | `13.2-RELEASE` |
