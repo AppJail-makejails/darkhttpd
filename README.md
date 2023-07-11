@@ -87,7 +87,7 @@ The port (external and internal) `80` is used as you can see, but use any port y
 
 ### Arguments
 
-* `darkhttpd_tag` (default: `latest`): see [#tags](#tags).
+* `darkhttpd_tag` (default: `13.2`): see [#tags](#tags).
 
 ## How to build the Image
 
@@ -112,14 +112,15 @@ Remove unportable or unnecessary files and directories and export the jail:
 ```sh
 appjail stop darkhttpd
 appjail cmd local darkhttpd sh -c "rm -f var/log/*"
-appjail cmd local darkhttpd sh -c "rm -f var/db/pkg/*"
 appjail cmd local darkhttpd sh -c "rm -f var/cache/pkg/*"
+appjail cmd local darkhttpd sh -c "rm -f var/run/*"
 appjail cmd local darkhttpd vi etc/rc.conf
 appjail image export darkhttpd
 ```
 
 ## Tags
 
-| Tag | Arch | Version |
-| --- | --- | --- |
-| `latest` | `amd64` | `13.2-RELEASE` |
+| Tag    | Arch    | Version        |
+| ------ | ------- | -------------- |
+| `13.2` | `amd64` | `13.2-RELEASE` |
+| `13.1` | `amd64` | `13.1-RELEASE` |
