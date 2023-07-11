@@ -4,7 +4,7 @@ tags: 13.1
 13.1.timestamp.amd64: 1689057390
 13.1.sum.amd64: 23a8c310b041d75cf039b829417858733d9f56f63665e61874b78171cfaccdf5
 13.1.size.amd64: 16906300
-13.1.source.amd64: https://dl.dropboxusercontent.com/sh/tg7i22onuqbl7ng/AABYYfFZyLkm3XCLwLL0uILWa/darkhttpd/darkhttpd-13.1-amd64-image.appjail?dl=0
+13.1.source.amd64: "https://dl.dropboxusercontent.com/scl/fi/9l682nb3j6qp1s0lgcsnl/darkhttpd-13.1-amd64-image.appjail?rlkey=tmd8sl4vvz9r2nvpuyeaz4p67&dl=0"
 
 tags+: 13.2
 13.2.arch: amd64
@@ -12,4 +12,4 @@ tags+: 13.2
 13.2.timestamp.amd64: 1689057395
 13.2.sum.amd64: df62d435c8b154bec29189ba1312c34695bc25b4129359bfa483f26508eb1501
 13.2.size.amd64: 17155624
-13.2.source.amd64: https://dl.dropboxusercontent.com/sh/tg7i22onuqbl7ng/AAA6pnm5MpoIHTSlrvRmn_uua/darkhttpd/darkhttpd-13.2-amd64-image.appjail?dl=0
+13.2.source.amd64: "https://dl.dropboxusercontent.com/scl/fi/376boa14gz25y92wdnyfo/darkhttpd-13.2-amd64-image.appjail?rlkey=k6y3tyodrs61pzrznys37mtia&dl=0"
