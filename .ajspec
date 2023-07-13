@@ -1,15 +1,15 @@
 tags: 13.1
 13.1.arch: amd64
 13.1.name: "darkhttpd"
-13.1.timestamp.amd64: 1689112808
-13.1.sum.amd64: 2b51b37185fe9504d59f9f2a71a0890055bddb019ca473c52359aad0d56d4d3c
-13.1.size.amd64: 17132168
+13.1.timestamp.amd64: 1689212802
+13.1.sum.amd64: cf33afcd4e176c4251c7c3954c1a3a1d53884b8c300ce82d2dc4254917329caa
+13.1.size.amd64: 17118816
 13.1.source.amd64: "https://dl.dropboxusercontent.com/scl/fi/58t4q1f19nlfhzfye1ud1/darkhttpd-13.1-amd64-image.appjail?rlkey=hwojbm7dqm2mw3myjwpof768f&dl=0"
 
 tags+: 13.2
 13.2.arch: amd64
 13.2.name: "darkhttpd"
-13.2.timestamp.amd64: 1689113141
-13.2.sum.amd64: fe6bfeb6016657ae81f73c593c939faee917171c7f116d196dda1bcbc54d911f
-13.2.size.amd64: 17154712
+13.2.timestamp.amd64: 1689213030
+13.2.sum.amd64: 5915f5de8c557ffcf87b138f3f637b2f1cbc145404d6e6fdb09d563cb9262a70
+13.2.size.amd64: 16916752
 13.2.source.amd64: "https://dl.dropboxusercontent.com/scl/fi/3d35g1qo5yf68d23s04ke/darkhttpd-13.2-amd64-image.appjail?rlkey=0a7hvra975ib1r4hr3ikubbf0&dl=0"
