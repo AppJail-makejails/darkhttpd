@@ -98,7 +98,6 @@ INCLUDE options/network.makejail
 INCLUDE gh+AppJail-makejails/darkhttpd --file build.makejail
 
 SYSRC darkhttpd_enable=YES
-SERVICE darkhttpd start
 ```
 
 Build the jail:
