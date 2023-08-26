@@ -1,7 +1,7 @@
 tags: 13.2
 13.2.arch: amd64
 13.2.name: "darkhttpd"
-13.2.timestamp.amd64: 1692072881
-13.2.sum.amd64: 0e14ba3a424ba35d2a26e5b8b7676f63aafb33eba6979f89c54444049387b8b4
-13.2.size.amd64: 17008628
-13.2.source.amd64: "https://drive.google.com/uc?export=download&id=1s6NZjO-JAkbZOnNWFk8I5vV4qII1trCj"
+13.2.timestamp.amd64: 1692957490
+13.2.sum.amd64: ae93d5792c62c9a1edba2afdb3c1264b8729cf34119ff95d611241941b7de586
+13.2.size.amd64: 17247384
+13.2.source.amd64: "http://appjail.hpc.at/darkhttpd/13.2-amd64-image.appjail"
