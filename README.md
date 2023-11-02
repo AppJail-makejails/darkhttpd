@@ -55,7 +55,7 @@ appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
 appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
     -o virtualnet=":<random> default" \
     -o nat \
-    -o fstab="/usr/local/poudriere/data/packages/132amd64-default/All /usr/local/www/darkhttpd" \
+    -o fstab="/usr/local/poudriere/data/packages/132amd64-default /usr/local/www/darkhttpd" \
     -o expose=3080:80
 ```
 
