@@ -43,47 +43,23 @@ unix4lyfe.org/darkhttpd
 
 ### Basic usage
 
-```
-INCLUDE options/network.makejail
-INCLUDE gh+AppJail-makejails/darkhttpd
-```
-
-Where `options/network.makejail` are the options that suit your environment, for example:
-
-```
-ARG network
-ARG interface=darkhttpd
-
-OPTION virtualnet=${network}:${interface} default
-OPTION nat
-```
-
-Open a shell and run `appjail makejail`:
-
 ```sh
-appjail makejail -j darkhttpd -- --network testing
+appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
+    -o virtualnet=":<random> default" \
+    -o nat
 ```
 
 ### Using a host's directory
 
-```
-INCLUDE options/network.makejail
-
-SYSRC "darkhttpd_flags=--uid darkhttpd --gid darkhttpd --log /var/log/darkhttpd.log"
-
-INCLUDE gh+AppJail-makejails/darkhttpd
-
-OPTION expose=80
-
-ARG wwwdir=/usr/local/www/darkhttpd
-
-CMD --local mkdir -p "${wwwdir}"
-MOUNT "${wwwdir}" /usr/local/www/darkhttpd
+```sh
+appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
+    -o virtualnet=":<random> default" \
+    -o nat \
+    -o fstab="/usr/local/poudriere/data/packages/132amd64-default/All /usr/local/www/darkhttpd" \
+    -o expose=3080:80
 ```
 
-Darkhttpd does not have a configuration file like other web servers, it simply uses command-line options, so we can pass options through `darkhttpd_flags`. Note that `darkhttpd_flags` is enclosed in quotes as `sysrc(8)` will complain about the hyphens.
-
-The port (external and internal) `80` is used as you can see, but use any port you want.
+**Note**: The above example exposes port `3080`. It is not necessary unless you plan to expose this service. Read more information on [Port Forwarding](https://appjail.readthedocs.io/en/latest/networking/virtual-networks/port-forwarding/).
 
 ### Arguments
 
@@ -91,19 +67,12 @@ The port (external and internal) `80` is used as you can see, but use any port y
 
 ## How to build the Image
 
-Make any changes you want to your image.
-
-```
-INCLUDE options/network.makejail
-INCLUDE gh+AppJail-makejails/darkhttpd --file build.makejail
-
-SYSRC darkhttpd_enable=YES
-```
-
 Build the jail:
 
 ```sh
-appjail makejail -j darkhttpd
+appjail makejail -j darkhttpd -f "gh+AppJail-makejails/darkhttpd --file build.makejail" \
+    -o virtualnet=":<random> default" \
+    -o nat
 ```
 
 Remove unportable or unnecessary files and directories and export the jail:
