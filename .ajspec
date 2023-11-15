@@ -1,8 +1,8 @@
 tags+: 13.2
 13.2.arch: amd64
 13.2.name: "darkhttpd"
-13.2.timestamp.amd64: 1698682419
-13.2.sum.amd64: 92d05a5a062d17c86cf6d5c9480346a9640c85c8b6ed28ea02e38d206fd6888c
-13.2.size.amd64: 17171868
+13.2.timestamp.amd64: 1700058496
+13.2.sum.amd64: a2580dc06cf4ca985c6322ec1d9c1213581c2ce8d66e2a977db50e1a2a1d8ac8
+13.2.size.amd64: 19149336
 13.2.source.amd64: https://images.all101bsd.download/darkhttpd/13.2-amd64-image.appjail
 13.2.source.amd64+: http://appjail.hpc.at/darkhttpd/13.2-amd64-image.appjail
