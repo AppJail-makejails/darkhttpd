@@ -65,27 +65,6 @@ appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
 
 * `darkhttpd_tag` (default: `13.2`): see [#tags](#tags).
 
-## How to build the Image
-
-Build the jail:
-
-```sh
-appjail makejail -j darkhttpd -f "gh+AppJail-makejails/darkhttpd --file build.makejail" \
-    -o virtualnet=":<random> default" \
-    -o nat
-```
-
-Remove unportable or unnecessary files and directories and export the jail:
-
-```sh
-appjail stop darkhttpd
-appjail cmd local darkhttpd sh -c "rm -f var/log/*"
-appjail cmd local darkhttpd sh -c "rm -f var/cache/pkg/*"
-appjail cmd local darkhttpd sh -c "rm -f var/run/*"
-appjail cmd local darkhttpd vi etc/rc.conf
-appjail image export darkhttpd
-```
-
 ## Tags
 
 | Tag    | Arch    | Version        | Type   |
