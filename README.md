@@ -70,4 +70,4 @@ appjail makejail -j darkhttpd -f gh+AppJail-makejails/darkhttpd \
 | Tag    | Arch    | Version        | Type   |
 | ------ | ------- | -------------- | ------ |
 | `13.3` | `amd64` | `13.3-RELEASE` | `thin` |
-| `14.0` | `amd64` | `14.0-RELEASE` | `thin` |
+| `14.1` | `amd64` | `14.1-RELEASE` | `thin` |
