@@ -1,14 +1,17 @@
-tags: 13.4
+tags+: 13.4
 13.4.arch: amd64
 13.4.name: "darkhttpd"
-13.4.timestamp.amd64: 1734310840
-13.4.sum.amd64: e9d84d603df21ef43fdbd41ab7241ace48228e36a9dda248f60b840da8835baf
-13.4.size.amd64: 30279957
-13.4.source.amd64: "https://images.all101bsd.download/darkhttpd/13.4-amd64-image.appjail"
+13.4.timestamp.amd64: 1734388814
+13.4.sum.amd64: 166a9f3a4323d2a3b5176789bbcfb487cb6be165232c047cfaa96dd6200b3e53
+13.4.size.amd64: 30280317
+13.4.source.amd64: "http://appjail.hpc.at/darkhttpd/13.4-amd64-image.appjail"
+13.4.source.amd64+: "https://images.all101bsd.download/darkhttpd/13.4-amd64-image.appjail"
 tags+: 14.2
 14.2.arch: amd64
 14.2.name: "darkhttpd"
-14.2.timestamp.amd64: 1734310869
-14.2.sum.amd64: 34df9318c4a116ad80933750faf168ff965ff525dd85d6cacf27f300b7ec5437
-14.2.size.amd64: 29822917
-14.2.source.amd64: "https://images.all101bsd.download/darkhttpd/14.2-amd64-image.appjail"
+14.2.timestamp.amd64: 1734388850
+14.2.sum.amd64: 5aca47de31bb276964d58cf00ad1ecbf2188693ebc8f8071497c9bc0273e2cb6
+14.2.size.amd64: 29822441
+14.2.source.amd64: "http://appjail.hpc.at/darkhttpd/14.2-amd64-image.appjail"
+14.2.source.amd64+: "https://images.all101bsd.download/darkhttpd/14.2-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
