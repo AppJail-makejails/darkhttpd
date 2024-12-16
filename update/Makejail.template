@@ -4,3 +4,6 @@ ARG darkhttpd_tag=%%TAG1%%
 ARG darkhttpd_ajspec=gh+AppJail-makejails/darkhttpd
 
 FROM --entrypoint "${darkhttpd_ajspec}" darkhttpd:${darkhttpd_tag}
+
+SYSRC darkhttpd_enable=YES
+SERVICE darkhttpd start
