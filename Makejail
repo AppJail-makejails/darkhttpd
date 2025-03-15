@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG darkhttpd_tag=13.4
+ARG darkhttpd_tag=13.5
 ARG darkhttpd_ajspec=gh+AppJail-makejails/darkhttpd
 
 FROM --entrypoint "${darkhttpd_ajspec}" darkhttpd:${darkhttpd_tag}
