@@ -1,5 +1,6 @@
 ARG darkhttpd_from=ghcr.io/appjail-makejails/darkhttpd
 ARG darkhttpd_tag=latest
 
+OPTION container=boot
 OPTION overwrite=force
 OPTION from=${darkhttpd_from}:${darkhttpd_tag}
