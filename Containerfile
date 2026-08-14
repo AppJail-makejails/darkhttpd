@@ -14,7 +14,7 @@ LABEL org.opencontainers.image.title="Darkhttpd" \
 RUN set -xe; \
     \
     pkg update; \
-    pkg install -U darkhttpd; \
+    pkg install darkhttpd; \
     \
     if [ -z "${NO_PKGCLEAN}" ]; then \
         pkg clean -a; \
